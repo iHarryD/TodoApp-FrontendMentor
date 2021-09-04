@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./todo-app-main/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/4bdcb9dfdb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <title>iTodo</title>
+  </head>
+  <body>
+    <div id="primary">
+      <header id="head-toggle">
+        <h1>T O D O</h1>
+        <div id="toggle-theme"></div>
+      </header>
+      <main id="main">
+        <div id="input">
+          <button id="add-item-btn"></button>
+          <input
+            id="todo-input"
+            type="text"
+            placeholder="Create a new todo..."
+          />
+        </div>
+        <ul id="todos">
+          <ul id="footer-in-main">
+            <li id="numbers-of-todos">0 items left</li>
+            <div id="filters">
+              <input type="radio" name="filter" value="all" checked />
+              <input type="radio" name="filter" value="active" />
+              <input type="radio" name="filter" value="completed" />
+            </div>
+            <li id="clear-completed-btn">Clear Completed</li>
+          </ul>
+        </ul>
+      </main>
+      <footer>Drag and drop to reorder list.</footer>
+    </div>
+  </body>
+</html>
